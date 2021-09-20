@@ -211,7 +211,6 @@ sleep 1
 cd /var/www/html/stalker_portal/deploy
 sudo phing
 sleep 1
-smallLoader
 
 echo ""
 echo -e "${CCYAN}-----------------------------------------------------------------------${CEND}"
