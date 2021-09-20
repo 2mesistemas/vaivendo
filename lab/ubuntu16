@@ -128,8 +128,8 @@ fi
 
 # 
 
-pass="st@lk3r"
-source="http://linuxhelps.net/configs"
+pass="29084710"
+source="https://github.com/2mesistemas/vaivendo/tree/master/configs"
 
 # Install Necessary services & packets
 sudo apt-get -y -u install unzip nginx memcached php php-mcrypt php-mysql php-pear nodejs libapache2-mod-php
@@ -189,7 +189,7 @@ rm -rf *.zip
 
 # Create Database
 mysql -uroot -p$pass -e "create database stalker_db"
-mysql -uroot -p$pass -e "GRANT ALL PRIVILEGES ON stalker_db.* TO stalker@localhost IDENTIFIED BY '1' WITH GRANT OPTION;"
+mysql -uroot -p$pass -e "GRANT ALL PRIVILEGES ON stalker_db.* TO stalker@localhost IDENTIFIED BY '29084710' WITH GRANT OPTION;"
 
 # MySQL Settings
 echo 'sql_mode=""' >> /etc/mysql/mysql.conf.d/mysqld.cnf
