@@ -1,5 +1,5 @@
 ```sh
-git clone https://github.com/SlaSerX/stalker
+git clone https://github.com/2mesistemas/vaivendo
 
 cd stalker/
 
