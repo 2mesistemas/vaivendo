@@ -57,7 +57,7 @@ smallLoader() {
 
 
 
-VER="5.4.0"
+VER="5.6.6"
 PRODUCT="Ministra Portal"
 WEB="http://`ip route get 8.8.8.8 | awk '{print $NF; exit}'`/stalker_portal"
 WAN="`wget -q -O - http://icanhazip.com/ | tail`"
@@ -183,8 +183,8 @@ mysql -uroot -p$pass -e 'USE mysql; UPDATE `user` SET `Host`="%" WHERE `User`="r
 
 # Download Ministra
 cd /var/www/html/
-wget http://lab.itbox.bg/software/tv/ministra-5.4.1.zip
-unzip ministra-5.4.1.zip
+sudo wget https://download1589.mediafire.com/cm7nkcct8f8g/hvthunozhr0743f/ministra-5.6.6.zip
+unzip ministra-5.6.6.zip
 rm -rf *.zip
 
 # Create Database
