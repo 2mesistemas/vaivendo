@@ -132,7 +132,7 @@ pass="29084710"
 source="https://github.com/2mesistemas/vaivendo/tree/master/configs"
 
 # Install Necessary services & packets
-sudo apt-get -y -u install unzip nginx memcached php php-mcrypt php-mysql php-pear nodejs libapache2-mod-php
+apt-get -y -u install unzip nginx memcached php php-mcrypt php-mysql php-pear nodejs libapache2-mod-php
 sleep 1
 
 # Apache & Nginx config
@@ -162,9 +162,9 @@ pear install -Z phing/phing
 sleep 1
 
 # Install NPM  2.5.11
-sudo apt-get -y -u install npm
-sudo npm install -g npm@2.15.11
-sudo ln -s /usr/bin/nodejs /usr/bin/node
+apt-get -y -u install npm
+npm install -g npm@2.15.11
+ln -s /usr/bin/nodejs /usr/bin/node
 
 # Set the Server Timezone to CST
 echo "Europe/Sofia" > /etc/timezone
@@ -183,7 +183,7 @@ mysql -uroot -p$pass -e 'USE mysql; UPDATE `user` SET `Host`="%" WHERE `User`="r
 
 # Download Ministra
 cd /var/www/html/
-sudo wget https://download1589.mediafire.com/cm7nkcct8f8g/hvthunozhr0743f/ministra-5.6.6.zip
+wget https://download1589.mediafire.com/cm7nkcct8f8g/hvthunozhr0743f/ministra-5.6.6.zip
 unzip ministra-5.6.6.zip
 rm -rf *.zip
 
@@ -209,7 +209,7 @@ sleep 1
 
 # Phing :)
 cd /var/www/html/stalker_portal/deploy
-sudo phing
+phing
 sleep 1
 
 echo ""
