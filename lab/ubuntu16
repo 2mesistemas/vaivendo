@@ -228,6 +228,8 @@ tar -xvf vendor.tar
 sleep 1
 
 # Phing :)
+sudo apt update
+sudo apt install phing -y
 cd /var/www/html/stalker_portal/deploy
 phing
 sleep 1
