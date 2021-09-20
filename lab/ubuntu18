@@ -155,7 +155,7 @@ apt-get purge libapache2-mod-php5filter > /dev/null
 phpenmod mcrypt
 cd /etc/apache2/sites-enabled/
 rm -rf *
-wget https://download1581.mediafire.com/07k689nwxwog/te0pkbwehmelmea/default
+https://download1338.mediafire.com/hsx3bbq610qg/2t382d86shvqjpu/000-default.conf
 cd /etc/apache2/
 rm -rf ports.conf
 wget https://download1486.mediafire.com/lzjgzii02kfg/n1wlsh1xm8o8s0g/ports.conf
