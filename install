@@ -47,7 +47,8 @@ else
  options=(1 "Install Ministra Portal" off # any option can be set to default to "on"
  2 "Install Stalker Portal" off
  3 "Install Ministra on Ubuntu 16.04" off
- 4 "Exit" off)
+ 4 "Install Ministra on Ubuntu 18.04" off
+ 5 "Exit" off)
  choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
  clear
  for choice in $choices
@@ -68,6 +69,11 @@ else
  #Install Ubuntu 16.04
  echo "Install Ministra on Ubuntu 16.04"
 ./lab/ubuntu16
+ ;;
+ 
+ #Install Ubuntu 18.04
+ echo "Install Ministra on Ubuntu 18.04"
+./lab/ubuntu18
  ;;
 
  #Exit
