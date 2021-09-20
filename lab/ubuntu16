@@ -123,7 +123,12 @@ EOF
 if [ "$skipyesno" -ne 1 ] && [ -z "$setup_only" ]; then
   install_msg
 fi
-# 
+
+# Ajustar o Horário
+echo "America/Sao_Paulo" > /etc/timezone
+dpkg-reconfigure -f noninteractive tzdata
+udo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z"
+sudo hwclock --systohc
 
 # Install Necessary services & packets
 #apt-get -y -u install unzip nginx memcached php php-mcrypt php-mysql php-pear nodejs libapache2-mod-php
@@ -174,16 +179,6 @@ sleep 1
 apt-get -y -u install npm
 npm install -g npm@2.15.11
 ln -s /usr/bin/nodejs /usr/bin/node
-
-# Set the Server Timezone to CST
-#echo "Europe/Sofia" > /etc/timezone
-#dpkg-reconfigure -f noninteractive tzdata
-
-# Set the Server Timezone to EDT
-#echo "America/Sao_Paulo" > /etc/timezone
-#dpkg-reconfigure -f noninteractive tzdata
-sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z"
-sudo hwclock --systohc
 
 # Install MySQL Server in a Non-Interactive mode. Default root password will be "29084710"
 echo "mysql-server mysql-server/root_password password $pass" | sudo debconf-set-selections
