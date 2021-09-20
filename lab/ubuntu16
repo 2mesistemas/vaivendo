@@ -123,12 +123,7 @@ EOF
 if [ "$skipyesno" -ne 1 ] && [ -z "$setup_only" ]; then
   install_msg
 fi
-
-
 # 
-
-pass="29084710"
-source="https://github.com/2mesistemas/vaivendo/tree/master/configs"
 
 # Install Necessary services & packets
 #apt-get -y -u install unzip nginx memcached php php-mcrypt php-mysql php-pear nodejs libapache2-mod-php
@@ -155,13 +150,13 @@ apt-get purge libapache2-mod-php5filter > /dev/null
 phpenmod mcrypt
 cd /etc/apache2/sites-enabled/
 rm -rf *
-wget $source/000-default.conf
+wget https://download1581.mediafire.com/07k689nwxwog/te0pkbwehmelmea/default
 cd /etc/apache2/
 rm -rf ports.conf
-wget $source/ports.conf
+wget https://download1486.mediafire.com/lzjgzii02kfg/n1wlsh1xm8o8s0g/ports.conf
 cd /etc/nginx/sites-available/
 rm -rf default
-wget $source/default
+wget https://download1581.mediafire.com/07k689nwxwog/te0pkbwehmelmea/default
 /etc/init.d/apache2 restart
 /etc/init.d/nginx restart
 sleep 1
@@ -203,7 +198,7 @@ mysql -uroot -p$pass -e 'USE mysql; UPDATE `user` SET `Host`="%" WHERE `User`="r
 
 # Download Ministra
 cd /var/www/html/
-wget https://download1589.mediafire.com/cm7nkcct8f8g/hvthunozhr0743f/ministra-5.6.6.zip
+wget https://download1589.mediafire.com/mxyrblhcssyg/kb3y2di2l9oobpz/ministra-5.6.6.zip
 unzip ministra-5.6.6.zip
 rm -rf *.zip
 
