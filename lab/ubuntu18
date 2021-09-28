@@ -155,13 +155,13 @@ apt-get purge libapache2-mod-php5filter > /dev/null
 phpenmod mcrypt
 cd /etc/apache2/sites-enabled/
 rm -rf *
-cp /home/marcos/vaivendo/-/000-default.conf ./
+cp /home/marcos/vaivendo/configs/000-default.conf ./
 cd /etc/apache2/
 rm -rf ports.conf
-cp /home/marcos/vaivendo/-//ports.conf
+cp /home/marcos/vaivendo/configs/ports.conf
 cd /etc/nginx/sites-available/
 rm -rf default
-cp /home/marcos/vaivendo/-//default
+cp /home/marcos/vaivendo/configs/default
 /etc/init.d/apache2 restart
 /etc/init.d/nginx restart
 sleep 1
