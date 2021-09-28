@@ -158,10 +158,10 @@ rm -rf *
 cp /home/marcos/vaivendo/configs/000-default.conf ./
 cd /etc/apache2/
 rm -rf ports.conf
-cp /home/marcos/vaivendo/configs/ports.conf
+cp /home/marcos/vaivendo/configs/ports.conf ./
 cd /etc/nginx/sites-available/
 rm -rf default
-cp /home/marcos/vaivendo/configs/default
+cp /home/marcos/vaivendo/configs/default ./
 /etc/init.d/apache2 restart
 /etc/init.d/nginx restart
 sleep 1
