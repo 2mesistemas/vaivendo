@@ -131,7 +131,7 @@ dpkg-reconfigure -f noninteractive tzdata
 #sudo hwclock --systohc
 
 # Install Necessary services & packets
-apt-get -y -u install unzip nginx memcached php php-mcrypt php-mysql php-pear nodejs libapache2-mod-php -y
+#apt-get -y -u install unzip nginx memcached php php-mcrypt php-mysql php-pear nodejs libapache2-mod-php -y
 apt-get install zip unzip -y
 apt install software-properties-common & add-apt-repository ppa:ondrej/php 
 apt update & apt upgrade -y 
