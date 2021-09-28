@@ -70,14 +70,14 @@ else
  echo "Install Ministra on Ubuntu 16.04"
 ./lab/ubuntu16
  ;;
- 
+ 4)
  #Install Ubuntu 18.04
  echo "Install Ministra on Ubuntu 18.04"
 ./lab/ubuntu18
  ;;
 
  #Exit
-4)
+5)
 exit
  ;;
 
