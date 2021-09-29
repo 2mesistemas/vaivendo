@@ -131,7 +131,7 @@ fi
 pass="29084710"
 
 # Install Necessary services & packets
-apt-get -y -u install git-all unzip nginx memcached php php-mcrypt php-mysql php-pear nodejs libapache2-mod-php -y
+apt-get -y -u install git-all phing unzip nginx memcached php php-mcrypt php-mysql php-pear nodejs libapache2-mod-php -y
 sleep 1
 
 # Apache & Nginx config
