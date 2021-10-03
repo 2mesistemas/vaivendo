@@ -193,8 +193,9 @@ mysql -uroot -p$pass -e 'USE mysql; UPDATE `user` SET `Host`="%" WHERE `User`="r
 
 # Download Ministra
 cd /var/www/html/
-wget -c http://download1589.mediafire.com/uje6ktg32r5g/kb3y2di2l9oobpz/ministra-5.6.6.zip
-unzip ministra-5.6.6.zip
+#wget -c http://download1589.mediafire.com/uje6ktg32r5g/kb3y2di2l9oobpz/ministra-5.6.6.zip
+http://www.wsvdt.co/ministra-5.6.8.zip
+unzip ministra-5.6.8.zip
 rm -rf *.zip
 
 # Create Database
