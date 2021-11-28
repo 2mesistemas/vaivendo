@@ -57,7 +57,7 @@ smallLoader() {
 
 
 
-VER="5.6.6"
+VER="5.6.1"
 PRODUCT="Ministra Portal"
 WEB="http://`ip route get 8.8.8.8 | awk '{print $NF; exit}'`/stalker_portal"
 WAN="`wget -q -O - http://icanhazip.com/ | tail`"
@@ -128,7 +128,7 @@ fi
 
 # 
 
-pass="29084710"
+#pass="29084710"
 
 # Install Necessary services & packets
 apt-get -y -u install git-all phing unzip nginx memcached php php-mcrypt php-mysql php-pear nodejs libapache2-mod-php -y
@@ -166,7 +166,7 @@ npm install -g npm@2.15.11
 ln -s /usr/bin/nodejs /usr/bin/node
 
 # Set the Server Timezone to CST
-echo "Europe/Sofia" > /etc/timezone
+echo "America/Sao_Paulo" > /etc/timezone
 dpkg-reconfigure -f noninteractive tzdata
 
 # Install MySQL Server in a Non-Interactive mode. Default root password will be "29084710"
@@ -182,9 +182,9 @@ mysql -uroot -p$pass -e 'USE mysql; UPDATE `user` SET `Host`="%" WHERE `User`="r
 
 # Download Ministra
 cd /var/www/html/
-wget http://download1589.mediafire.com/zdryl6w2ynug/hvthunozhr0743f/ministra-5.6.6.zip
-unzip ministra-5.6.6.zip
-rm -rf *.zip
+wget http://21.no-ip.info/ministra-5.6.1.zip
+unzip ministra-5.6.1.zip
+#rm -rf *.zip
 
 # Create Database
 mysql -uroot -p$pass -e "create database stalker_db"
@@ -202,7 +202,7 @@ echo "short_open_tag = On" >> /etc/php/7.0/apache2/php.ini
 sleep 1
 rm -rf /var/www/html/stalker_portal/admin/vendor
 cd /var/www/html/stalker_portal/admin
-wget http://download1490.mediafire.com/zvyrcutr3lkg/0fi9cyzrilek2zv/vendor.tar
+wget http://download1490.mediafire.com/3pem91qz11cg/0fi9cyzrilek2zv/vendor.tar
 tar -xvf vendor.tar
 sleep 1
 
