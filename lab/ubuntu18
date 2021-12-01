@@ -162,6 +162,8 @@ cp /home/marcos/vaivendo/configs/ports.conf ./
 cd /etc/nginx/sites-available/
 rm -rf default
 cp /home/marcos/vaivendo/configs/default ./
+cd /var/www/html/stalker_portal/server/
+cp /home/marcos/vaivendo/configs/custom.ini ./
 /etc/init.d/apache2 restart
 /etc/init.d/nginx restart
 sleep 1
