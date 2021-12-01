@@ -219,6 +219,7 @@ mkdir admin
 cd /var/www/html/stalker_portal/admin
 #wget -c https://download1490.mediafire.com/i34w0duk4bog/0fi9cyzrilek2zv/vendor.tar
 tar -xvf vendor.tar
+apt install composer -y
 sleep 1
 
 # Phing :)
