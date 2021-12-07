@@ -195,7 +195,7 @@ mysql -uroot -p$pass -e 'USE mysql; UPDATE `user` SET `Host`="%" WHERE `User`="r
 
 # Download Ministra
   cd /var/www/html/
- #wget -c https://download1644.mediafire.com/irrh84e5buvg/6xm3i1u8wws5exu/ministra-5.6.8.zip  
+  wget -c https://download1644.mediafire.com/urvjhzux0yxg/6xm3i1u8wws5exu/ministra-5.6.8.zip
   unzip ministra-5.6.8.zip
   #rm -rf *.zip
 
@@ -218,7 +218,7 @@ cd /var/www/html/stalker_portal
 mkdir admin
 cp /var/www/html/vendor.tar /var/www/html/stalker_portal/admin/
 cd /var/www/html/stalker_portal/admin
-#wget -c https://download1490.mediafire.com/i34w0duk4bog/0fi9cyzrilek2zv/vendor.tar
+wget -c https://download1490.mediafire.com/90ad596ulekg/0fi9cyzrilek2zv/vendor.tar
 tar -xvf vendor.tar
 apt install composer -y
 sleep 1
