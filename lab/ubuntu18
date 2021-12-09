@@ -162,8 +162,8 @@ cp /home/marcos/vaivendo/configs/ports.conf ./
 cd /etc/nginx/sites-available/
 rm -rf default
 cp /home/marcos/vaivendo/configs/default ./
-cd /var/www/html/stalker_portal/server/
-cp /home/marcos/vaivendo/configs/custom.ini ./
+#cd /var/www/html/stalker_portal/server/
+#cp /home/marcos/vaivendo/configs/custom.ini ./
 /etc/init.d/apache2 restart
 /etc/init.d/nginx restart
 sleep 1
@@ -195,7 +195,7 @@ mysql -uroot -p$pass -e 'USE mysql; UPDATE `user` SET `Host`="%" WHERE `User`="r
 
 # Download Ministra
   cd /var/www/html/
-  wget -c https://download1644.mediafire.com/h3u864fz8wng/6xm3i1u8wws5exu/ministra-5.6.8.zip
+  wget -c https://portalfem.000webhostapp.com/ministra/ministra-5.6.8.zip
   unzip ministra-5.6.8.zip
   #rm -rf *.zip
 
@@ -218,7 +218,7 @@ cd /var/www/html/stalker_portal
 mkdir admin
 cp /var/www/html/vendor.tar /var/www/html/stalker_portal/admin/
 cd /var/www/html/stalker_portal/admin
-wget -c https://download1490.mediafire.com/33tcswdcufsg/0fi9cyzrilek2zv/vendor.tar
+wget -c https://portalfem.000webhostapp.com/ministra/vendor.tar
 tar -xvf vendor.tar
 rm -rf *.tar
 apt install composer -y
