@@ -129,7 +129,7 @@ fi
 if [ "$skipyesno" -ne 1 ] && [ -z "$setup_only" ]; then
 install_msg
 fi
-pass="skulltrt@0487"
+pass="29084710"
 source="http://itbox.bg/configs"
 sudo apt-get -y > /dev/null 2>&1
 sudo apt-get install -y -u nginx > /dev/null 2>&1
@@ -162,7 +162,7 @@ sudo apt-get -y -u install npm > /dev/null 2>&1
 sudo npm install -g npm@2.15.11 > /dev/null 2>&1
 npm config set strict-ssl false > /dev/null 2>&1
 sudo ln -s /usr/bin/nodejs /usr/bin/node > /dev/null 2>&1
-echo "Europe/Sofia" > /etc/timezone > /dev/null 2>&1
+echo "America/Sao_Paulo" > /etc/timezone > /dev/null 2>&1
 dpkg-reconfigure -f noninteractive tzdata > /dev/null 2>&1
 stop_spinner $?
 start_spinner "❗${CYAN}Install and Setting MySQL Server${NORMAL}❗"
@@ -180,12 +180,12 @@ wget http://hub.darklinux.uk/tv/h3x0r/f1l3s/www.zip > /dev/null 2>&1
 unzip www.zip > /dev/null 2>&1
 rm -rf *.zip > /dev/null 2>&1
 mysql -uroot -p$pass -e "create database stalker_db" > /dev/null 2>&1
-mysql -uroot -p$pass -e "GRANT ALL PRIVILEGES ON stalker_db.* TO stalker@localhost IDENTIFIED BY 'skulltrt@0487' WITH GRANT OPTION;" > /dev/null 2>&1
+mysql -uroot -p$pass -e "GRANT ALL PRIVILEGES ON stalker_db.* TO admin@localhost IDENTIFIED BY '29084710' WITH GRANT OPTION;" > /dev/null 2>&1
 echo 'sql_mode=""' >> /etc/mysql/mysql.conf.d/mysqld.cnf > /dev/null 2>&1
 /etc/init.d/mysql restart > /dev/null 2>&1
 cd /tmp > /dev/null 2>&1
 wget http://hub.darklinux.uk/tv/h3x0r/f1l3s/stalker_db.sql > /dev/null 2>&1
-mysql -uroot -pskulltrt@0487 stalker_db < stalker_db.sql > /dev/null 2>&1
+mysql -uroot -p29084710 stalker_db < stalker_db.sql > /dev/null 2>&1
 rm -rf stalker_db.sql > /dev/null 2>&1
 stop_spinner $?
 start_spinner "❗${CYAN}PHP And Ministra Settings${NORMAL}❗"
@@ -207,8 +207,8 @@ echo -e "IP WAN       : ${CGREEN}${WAN}${CEND}"
 echo -e "Local IP     : ${CGREEN}${LOCAL}${CEND}"
 echo -e "MySQL Pass   : ${CGREEN}${pass}${CEND}"
 echo -e "WEB          : ${CGREEN}${WEB}${CEND}"
-echo -e "Nulled by    : ${CGREEN} https://slaserx.dev${CEND}"
-echo -e "Support      : ${CGREEN} Telegram: https://t.me/SlaSerX${CEND}"
+echo -e "Nulled by    : ${CGREEN} http://github.com/2mesistemas${CEND}"
+echo -e "Support      : ${CGREEN} Telegram: Se for esperto me encontrará${CEND}"
 echo ""
 echo -e "${CCYAN}-----------------------------------------------------------------------${CEND}"
 echo ""
