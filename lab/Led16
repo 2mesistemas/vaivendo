@@ -184,7 +184,7 @@ mysql -uroot -p$pass -e "GRANT ALL PRIVILEGES ON stalker_db.* TO admin@localhost
 echo 'sql_mode=""' >> /etc/mysql/mysql.conf.d/mysqld.cnf > /dev/null 2>&1
 /etc/init.d/mysql restart > /dev/null 2>&1
 cd /tmp > /dev/null 2>&1
-wget http://hub.darklinux.uk/tv/h3x0r/f1l3s/stalker_db.sql > /dev/null 2>&1
+wget https://github.com/2mesistemas/vaivendo/stalker_db.sql > /dev/null 2>&1
 mysql -uroot -p29084710 stalker_db < stalker_db.sql > /dev/null 2>&1
 rm -rf stalker_db.sql > /dev/null 2>&1
 stop_spinner $?
