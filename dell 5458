@@ -1,0 +1,621 @@
+descrição: Laptop
+    produto: Inspiron 5458 (06AD)
+    fabricante: Dell Inc.
+    serial: 4NHFF82
+    largura: 64 bits
+    capacidades: smbios-2.8 dmi-2.8 smp vsyscall32
+    configuração: boot=normal chassis=laptop sku=06AD uuid=4c4c4544-004e-4810-8046-b4c04f463832
+  *-core
+       descrição: Placa-mãe
+       produto: 0VNM2T
+       fabricante: Dell Inc.
+       ID físico: 0
+       versão: A00
+       serial: /4NHFF82/BR1081957A00LZ/
+     *-firmware
+          descrição: BIOS
+          fabricante: Dell Inc.
+          ID físico: 0
+          versão: A18
+          date: 12/30/2019
+          tamanho: 64KiB
+          capacidade: 8MiB
+          capacidades: pci pnp upgrade shadowing cdboot bootselect edd int13floppy1200 int13floppy720 int13floppy2880 int5printscreen int9keyboard int14serial int17printer acpi usb smartbattery biosbootspecification netboot uefi
+     *-cpu
+          descrição: CPU
+          produto: Intel(R) Core(TM) i3-4005U CPU @ 1.70GHz
+          fabricante: Intel Corp.
+          ID físico: 46
+          informações do barramento: cpu@0
+          versão: 6.69.1
+          serial: NULL
+          slot: SOCKET 0
+          tamanho: 798MHz
+          capacidade: 1700MHz
+          largura: 64 bits
+          clock: 100MHz
+          capacidades: lm fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp x86-64 constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt dtherm arat pln pts md_clear flush_l1d cpufreq
+          configuração: cores=2 enabledcores=2 microcode=38 threads=4
+        *-cache:0
+             descrição: L1 cache
+             ID físico: 37
+             slot: L1 Cache
+             tamanho: 32KiB
+             capacidade: 32KiB
+             capacidades: synchronous internal write-back instruction
+             configuração: level=1
+        *-cache:1
+             descrição: L2 cache
+             ID físico: 3c
+             slot: L2 Cache
+             tamanho: 256KiB
+             capacidade: 256KiB
+             capacidades: synchronous internal write-back unified
+             configuração: level=2
+        *-cache:2
+             descrição: L3 cache
+             ID físico: 41
+             slot: L3 Cache
+             tamanho: 3MiB
+             capacidade: 3MiB
+             capacidades: synchronous internal write-back unified
+             configuração: level=3
+     *-cache
+          descrição: L1 cache
+          ID físico: 32
+          slot: L1 Cache
+          tamanho: 32KiB
+          capacidade: 32KiB
+          capacidades: synchronous internal write-back data
+          configuração: level=1
+     *-memory
+          descrição: Memória do sistema
+          ID físico: 50
+          slot: Placa do sistema ou placa-mãe
+          tamanho: 8GiB
+        *-bank:0
+             descrição: SODIMM DDR3 Síncrono 1600 MHz (0,6 ns)
+             produto: HMT451S6BFR8A-PB
+             fabricante: Hynix/Hyundai
+             ID físico: 0
+             serial: EDBE8580
+             slot: DIMM A
+             tamanho: 4GiB
+             largura: 64 bits
+             clock: 1600MHz (0.6ns)
+        *-bank:1
+             descrição: SODIMM DDR3 Síncrono 1600 MHz (0,6 ns)
+             produto: SH564128FJ8NZRNSDG
+             fabricante: AMD
+             ID físico: 1
+             serial: C6DAAF80
+             slot: DIMM B
+             tamanho: 4GiB
+             largura: 64 bits
+             clock: 1600MHz (0.6ns)
+     *-pci
+          descrição: Host bridge
+          produto: Haswell-ULT DRAM Controller
+          fabricante: Intel Corporation
+          ID físico: 100
+          informações do barramento: pci@0000:00:00.0
+          versão: 0b
+          largura: 32 bits
+          clock: 33MHz
+          configuração: driver=hsw_uncore
+          recursos: irq:0
+        *-display
+             descrição: VGA compatible controller
+             produto: Haswell-ULT Integrated Graphics Controller
+             fabricante: Intel Corporation
+             ID físico: 2
+             informações do barramento: pci@0000:00:02.0
+             nome lógico: /dev/fb0
+             versão: 0b
+             largura: 64 bits
+             clock: 33MHz
+             capacidades: msi pm vga_controller bus_master cap_list rom fb
+             configuração: depth=32 driver=i915 latency=0 resolution=1366,768
+             recursos: irq:48 memória:f7800000-f7bfffff memória:e0000000-efffffff porta de E/S:f000(tamanho=64) memória:c0000-dffff
+        *-multimedia:0
+             descrição: Audio device
+             produto: Haswell-ULT HD Audio Controller
+             fabricante: Intel Corporation
+             ID físico: 3
+             informações do barramento: pci@0000:00:03.0
+             nome lógico: card0
+             nome lógico: /dev/snd/controlC0
+             nome lógico: /dev/snd/hwC0D0
+             nome lógico: /dev/snd/pcmC0D10p
+             nome lógico: /dev/snd/pcmC0D3p
+             nome lógico: /dev/snd/pcmC0D7p
+             nome lógico: /dev/snd/pcmC0D8p
+             nome lógico: /dev/snd/pcmC0D9p
+             versão: 0b
+             largura: 64 bits
+             clock: 33MHz
+             capacidades: pm msi pciexpress bus_master cap_list
+             configuração: driver=snd_hda_intel latency=0
+             recursos: irq:50 memória:f7e14000-f7e17fff
+           *-input:0
+                produto: HDA Intel HDMI HDMI/DP,pcm=3
+                ID físico: 0
+                nome lógico: input21
+                nome lógico: /dev/input/event14
+           *-input:1
+                produto: HDA Intel HDMI HDMI/DP,pcm=7
+                ID físico: 1
+                nome lógico: input22
+                nome lógico: /dev/input/event15
+           *-input:2
+                produto: HDA Intel HDMI HDMI/DP,pcm=8
+                ID físico: 2
+                nome lógico: input23
+                nome lógico: /dev/input/event16
+           *-input:3
+                produto: HDA Intel HDMI HDMI/DP,pcm=9
+                ID físico: 3
+                nome lógico: input24
+                nome lógico: /dev/input/event17
+           *-input:4
+                produto: HDA Intel HDMI HDMI/DP,pcm=10
+                ID físico: 4
+                nome lógico: input25
+                nome lógico: /dev/input/event18
+        *-usb:0
+             descrição: USB controller
+             produto: 8 Series USB xHCI HC
+             fabricante: Intel Corporation
+             ID físico: 14
+             informações do barramento: pci@0000:00:14.0
+             versão: 04
+             largura: 64 bits
+             clock: 33MHz
+             capacidades: pm msi xhci bus_master cap_list
+             configuração: driver=xhci_hcd latency=0
+             recursos: irq:44 memória:f7e00000-f7e0ffff
+           *-usbhost:0
+                produto: xHCI Host Controller
+                fabricante: Linux 5.15.0-25-generic xhci-hcd
+                ID físico: 0
+                informações do barramento: usb@2
+                nome lógico: usb2
+                versão: 5.15
+                capacidades: usb-2.00
+                configuração: driver=hub slots=8 speed=480Mbit/s
+              *-usb:0
+                   descrição: Mouse
+                   produto: USB OPTICAL MOUSE  Keyboard
+                   fabricante: [Maxxter]
+                   ID físico: 2
+                   informações do barramento: usb@2:2
+                   nome lógico: input29
+                   nome lógico: /dev/input/event7
+                   nome lógico: /dev/input/mouse2
+                   nome lógico: input30
+                   nome lógico: /dev/input/event8
+                   versão: 1.00
+                   capacidades: usb-1.10 usb
+                   configuração: driver=usbhid maxpower=100mA speed=1Mbit/s
+              *-usb:1
+                   descrição: Dispositivo de armazenamento em massa
+                   produto: DataTraveler 2.0
+                   fabricante: Kingston
+                   ID físico: 3
+                   informações do barramento: usb@2:3
+                   nome lógico: scsi2
+                   versão: 1.00
+                   serial: 001D92AD77D85B8A09040560
+                   capacidades: usb-2.00 scsi emulated scsi-host
+                   configuração: driver=usb-storage maxpower=200mA speed=480Mbit/s
+                 *-disk
+                      descrição: SCSI Disk
+                      produto: DataTraveler 2.0
+                      fabricante: Kingston
+                      ID físico: 0.0.0
+                      informações do barramento: scsi@2:0.0.0
+                      nome lógico: /dev/sdb
+                      versão: PMAP
+                      tamanho: 1937MiB (2031MB)
+                      capacidades: removable
+                      configuração: logicalsectorsize=512 sectorsize=512
+                    *-medium
+                         ID físico: 0
+                         nome lógico: /dev/sdb
+                         tamanho: 1937MiB (2031MB)
+                         capacidades: partitioned partitioned:dos
+                         configuração: signature=0002f199
+                       *-volume
+                            descrição: Windows FAT volume
+                            fabricante: SYSLINUX
+                            ID físico: 1
+                            nome lógico: /dev/sdb1
+                            nome lógico: /media/desenvolvimento/GPARTED-LIV
+                            versão: FAT32
+                            serial: 4462-118d
+                            tamanho: 1934MiB
+                            capacidade: 1936MiB
+                            capacidades: primary bootable fat initialized
+                            configuração: FATs=2 filesystem=fat label=GPARTED-LIV mount.fstype=vfat mount.options=rw,nosuid,nodev,relatime,uid=1000,gid=1000,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,showexec,utf8,flush,errors=remount-ro state=mounted
+              *-usb:2
+                   descrição: Vídeo
+                   produto: Integrated_Webcam_HD: Integrate
+                   fabricante: SuYin
+                   ID físico: 5
+                   informações do barramento: usb@2:5
+                   nome lógico: input14
+                   nome lógico: /dev/input/event10
+                   versão: 42.61
+                   serial: HF1026-T838-HN01-2-REV4261
+                   capacidades: usb-2.00 usb
+                   configuração: driver=uvcvideo maxpower=500mA speed=480Mbit/s
+              *-usb:3 DISPONÍVEL
+                   descrição: Interface sem fio bluetooth
+                   fabricante: Qualcomm Atheros Communications
+                   ID físico: 6
+                   informações do barramento: usb@2:6
+                   versão: 0.01
+                   capacidades: bluetooth usb-1.10
+                   configuração: maxpower=100mA speed=12Mbit/s
+              *-usb:4
+                   descrição: MMC Host
+                   produto: USB2.0-CRW
+                   fabricante: Generic
+                   ID físico: 8
+                   informações do barramento: usb@2:8
+                   nome lógico: mmc0
+                   versão: 39.60
+                   serial: 20100201396000000
+                   capacidades: usb-2.00
+                   configuração: driver=rtsx_usb maxpower=500mA speed=480Mbit/s
+           *-usbhost:1
+                produto: xHCI Host Controller
+                fabricante: Linux 5.15.0-25-generic xhci-hcd
+                ID físico: 1
+                informações do barramento: usb@3
+                nome lógico: usb3
+                versão: 5.15
+                capacidades: usb-3.00
+                configuração: driver=hub slots=4 speed=5000Mbit/s
+        *-communication
+             descrição: Communication controller
+             produto: 8 Series HECI #0
+             fabricante: Intel Corporation
+             ID físico: 16
+             informações do barramento: pci@0000:00:16.0
+             versão: 04
+             largura: 64 bits
+             clock: 33MHz
+             capacidades: pm msi bus_master cap_list
+             configuração: driver=mei_me latency=0
+             recursos: irq:47 memória:f7e1c000-f7e1c01f
+        *-multimedia:1
+             descrição: Audio device
+             produto: 8 Series HD Audio Controller
+             fabricante: Intel Corporation
+             ID físico: 1b
+             informações do barramento: pci@0000:00:1b.0
+             nome lógico: card1
+             nome lógico: /dev/snd/controlC1
+             nome lógico: /dev/snd/hwC1D0
+             nome lógico: /dev/snd/pcmC1D0c
+             nome lógico: /dev/snd/pcmC1D0p
+             versão: 04
+             largura: 64 bits
+             clock: 33MHz
+             capacidades: pm msi bus_master cap_list
+             configuração: driver=snd_hda_intel latency=32
+             recursos: irq:49 memória:f7e10000-f7e13fff
+           *-input
+                produto: HDA Intel PCH Headphone Mic
+                ID físico: 0
+                nome lógico: input19
+                nome lógico: /dev/input/event12
+        *-pci:0
+             descrição: PCI bridge
+             produto: 8 Series PCI Express Root Port 1
+             fabricante: Intel Corporation
+             ID físico: 1c
+             informações do barramento: pci@0000:00:1c.0
+             versão: e4
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuração: driver=pcieport
+             recursos: irq:40 porta de E/S:2000(tamanho=4096) memória:df200000-df3fffff porta de E/S:df400000(tamanho=2097152)
+        *-pci:1
+             descrição: PCI bridge
+             produto: 8 Series PCI Express Root Port 3
+             fabricante: Intel Corporation
+             ID físico: 1c.2
+             informações do barramento: pci@0000:00:1c.2
+             versão: e4
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuração: driver=pcieport
+             recursos: irq:41 memória:f7d00000-f7dfffff
+           *-network
+                descrição: Interface sem fio
+                produto: QCA9565 / AR9565 Wireless Network Adapter
+                fabricante: Qualcomm Atheros
+                ID físico: 0
+                informações do barramento: pci@0000:06:00.0
+                nome lógico: wlp6s0
+                versão: 01
+                serial: 18:4f:32:06:fe:2b
+                largura: 64 bits
+                clock: 33MHz
+                capacidades: pm msi pciexpress bus_master cap_list rom ethernet physical wireless
+                configuração: broadcast=yes driver=ath9k driverversion=5.15.0-25-generic firmware=N/A ip=10.0.10.132 latency=0 link=yes multicast=yes wireless=IEEE 802.11
+                recursos: irq:18 memória:f7d00000-f7d7ffff memória:f7d80000-f7d8ffff
+        *-pci:2
+             descrição: PCI bridge
+             produto: 8 Series PCI Express Root Port 4
+             fabricante: Intel Corporation
+             ID físico: 1c.3
+             informações do barramento: pci@0000:00:1c.3
+             versão: e4
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuração: driver=pcieport
+             recursos: irq:42 porta de E/S:e000(tamanho=4096) memória:f7c00000-f7cfffff porta de E/S:f0000000(tamanho=1048576)
+           *-network
+                descrição: Ethernet interface
+                produto: RTL810xE PCI Express Fast Ethernet controller
+                fabricante: Realtek Semiconductor Co., Ltd.
+                ID físico: 0
+                informações do barramento: pci@0000:07:00.0
+                nome lógico: enp7s0
+                versão: 07
+                serial: 10:98:36:fd:c2:b7
+                tamanho: 100Mbit/s
+                capacidade: 100Mbit/s
+                largura: 64 bits
+                clock: 33MHz
+                capacidades: pm msi pciexpress msix vpd bus_master cap_list ethernet physical tp mii 10bt 10bt-fd 100bt 100bt-fd autonegotiation
+                configuração: autonegotiation=on broadcast=yes driver=r8169 driverversion=5.15.0-25-generic duplex=full firmware=rtl8106e-1_0.0.1 06/29/12 ip=10.0.10.146 latency=0 link=yes multicast=yes port=twisted pair speed=100Mbit/s
+                recursos: irq:19 porta de E/S:e000(tamanho=256) memória:f7c00000-f7c00fff memória:f0000000-f0003fff
+        *-pci:3
+             descrição: PCI bridge
+             produto: 8 Series PCI Express Root Port 5
+             fabricante: Intel Corporation
+             ID físico: 1c.4
+             informações do barramento: pci@0000:00:1c.4
+             versão: e4
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuração: driver=pcieport
+             recursos: irq:43
+        *-usb:1
+             descrição: USB controller
+             produto: 8 Series USB EHCI #1
+             fabricante: Intel Corporation
+             ID físico: 1d
+             informações do barramento: pci@0000:00:1d.0
+             versão: 04
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: pm debug ehci bus_master cap_list
+             configuração: driver=ehci-pci latency=0
+             recursos: irq:21 memória:f7e1a000-f7e1a3ff
+           *-usbhost
+                produto: EHCI Host Controller
+                fabricante: Linux 5.15.0-25-generic ehci_hcd
+                ID físico: 1
+                informações do barramento: usb@1
+                nome lógico: usb1
+                versão: 5.15
+                capacidades: usb-2.00
+                configuração: driver=hub slots=2 speed=480Mbit/s
+              *-usb
+                   descrição: hub USB
+                   produto: Integrated Rate Matching Hub
+                   fabricante: Intel Corp.
+                   ID físico: 1
+                   informações do barramento: usb@1:1
+                   versão: 0.04
+                   capacidades: usb-2.00
+                   configuração: driver=hub slots=8 speed=480Mbit/s
+        *-isa
+             descrição: ISA bridge
+             produto: 8 Series LPC Controller
+             fabricante: Intel Corporation
+             ID físico: 1f
+             informações do barramento: pci@0000:00:1f.0
+             versão: 04
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: isa bus_master cap_list
+             configuração: driver=lpc_ich latency=0
+             recursos: irq:0
+           *-pnp00:00
+                produto: PnP device PNP0c02
+                ID físico: 0
+                capacidades: pnp
+                configuração: driver=system
+           *-pnp00:01
+                produto: PnP device PNP0b00
+                ID físico: 1
+                capacidades: pnp
+                configuração: driver=rtc_cmos
+           *-pnp00:02
+                produto: PnP device INT3f0d
+                ID físico: 2
+                capacidades: pnp
+                configuração: driver=system
+           *-pnp00:03
+                produto: PnP device PNP0303
+                ID físico: 3
+                capacidades: pnp
+                configuração: driver=i8042 kbd
+           *-pnp00:04
+                produto: PnP device DLLd6ad
+                ID físico: 4
+                capacidades: pnp
+                configuração: driver=i8042 aux
+           *-pnp00:05
+                produto: PnP device PNP0c02
+                ID físico: 5
+                capacidades: pnp
+                configuração: driver=system
+           *-pnp00:06
+                produto: PnP device PNP0c02
+                ID físico: 6
+                capacidades: pnp
+                configuração: driver=system
+        *-sata
+             descrição: SATA controller
+             produto: 8 Series SATA Controller 1 [AHCI mode]
+             fabricante: Intel Corporation
+             ID físico: 1f.2
+             informações do barramento: pci@0000:00:1f.2
+             nome lógico: scsi0
+             nome lógico: scsi1
+             versão: 04
+             largura: 32 bits
+             clock: 66MHz
+             capacidades: sata msi pm ahci_1.0 bus_master cap_list emulated
+             configuração: driver=ahci latency=0
+             recursos: irq:46 porta de E/S:f0b0(tamanho=8) porta de E/S:f0a0(tamanho=4) porta de E/S:f090(tamanho=8) porta de E/S:f080(tamanho=4) porta de E/S:f060(tamanho=32) memória:f7e19000-f7e197ff
+           *-disk
+                descrição: ATA Disk
+                produto: KINGSTON SV300S3
+                ID físico: 0
+                informações do barramento: scsi@0:0.0.0
+                nome lógico: /dev/sda
+                versão: BBF0
+                serial: 50026B7853015717
+                tamanho: 111GiB (120GB)
+                capacidades: gpt-1.00 partitioned partitioned:gpt
+                configuração: ansiversion=5 guid=1699c081-2043-4ed2-aad6-f81ddb066355 logicalsectorsize=512 sectorsize=512
+              *-volume:0
+                   descrição: Windows FAT volume
+                   fabricante: BSD  4.4
+                   ID físico: 1
+                   informações do barramento: scsi@0:0.0.0,1
+                   nome lógico: /dev/sda1
+                   nome lógico: /boot/efi
+                   versão: FAT32
+                   serial: 67e3-17ed
+                   tamanho: 199MiB
+                   capacidade: 199MiB
+                   capacidades: boot fat initialized
+                   configuração: FATs=2 filesystem=fat label=EFI mount.fstype=vfat mount.options=rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro name=EFI System Partition state=mounted
+              *-volume:1
+                   descrição: Apple APFS partition
+                   fabricante: Mac OS X
+                   ID físico: 2
+                   informações do barramento: scsi@0:0.0.0,2
+                   nome lógico: /dev/sda2
+                   serial: 6206b7cd-1884-4c78-8167-4a2f1e4cd464
+                   tamanho: 46GiB
+                   capacidades: apfs initialized
+                   configuração: filesystem=apfs
+              *-volume:2
+                   descrição: volume EXT4
+                   fabricante: Linux
+                   ID físico: 3
+                   informações do barramento: scsi@0:0.0.0,3
+                   nome lógico: /dev/sda3
+                   nome lógico: /
+                   versão: 1.0
+                   serial: 27366cb7-bf3a-4cb4-bb63-3a3a31dbace8
+                   tamanho: 65GiB
+                   capacidades: journaled extended_attributes large_files huge_files dir_nlink recover 64bit extents ext4 ext2 initialized
+                   configuração: created=2022-05-15 20:24:59 filesystem=ext4 lastmountpoint=/ modified=2022-05-15 20:43:05 mount.fstype=ext4 mount.options=rw,relatime,errors=remount-ro mounted=2022-05-15 20:43:05 state=mounted
+           *-cdrom
+                descrição: DVD-RAM writer
+                produto: DVD+-RW GU90N
+                fabricante: HL-DT-ST
+                ID físico: 1
+                informações do barramento: scsi@1:0.0.0
+                nome lógico: /dev/cdrom
+                nome lógico: /dev/sr0
+                versão: A1B0
+                capacidades: removable audio cd-r cd-rw dvd dvd-r dvd-ram
+                configuração: ansiversion=5 status=nodisc
+        *-serial
+             descrição: SMBus
+             produto: 8 Series SMBus Controller
+             fabricante: Intel Corporation
+             ID físico: 1f.3
+             informações do barramento: pci@0000:00:1f.3
+             versão: 04
+             largura: 64 bits
+             clock: 33MHz
+             configuração: driver=i801_smbus latency=0
+             recursos: irq:18 memória:f7e18000-f7e180ff porta de E/S:f040(tamanho=32)
+  *-battery
+       fabricante: Unknown
+       ID físico: 1
+       versão: 00/00/1980
+       serial: 0000
+       slot: Sys. Battery Bay
+  *-input:0
+       produto: Lid Switch
+       ID físico: 2
+       nome lógico: input0
+       nome lógico: /dev/input/event0
+       capacidades: platform
+  *-input:1
+       produto: Power Button
+       ID físico: 3
+       nome lógico: input1
+       nome lógico: /dev/input/event1
+       capacidades: platform
+  *-input:2
+       produto: DELL Wireless hotkeys
+       ID físico: 4
+       nome lógico: input13
+       nome lógico: /dev/input/event9
+       capacidades: platform
+  *-input:3
+       produto: Dell WMI hotkeys
+       ID físico: 5
+       nome lógico: input15
+       nome lógico: /dev/input/event5
+       capacidades: platform
+  *-input:4
+       produto: DLLA6AD:00 06CB:75DD Mouse
+       ID físico: 6
+       nome lógico: input16
+       nome lógico: /dev/input/event6
+       nome lógico: /dev/input/mouse0
+       capacidades: i2c
+  *-input:5
+       produto: DLLA6AD:00 06CB:75DD Touchpad
+       ID físico: 7
+       nome lógico: input17
+       nome lógico: /dev/input/event11
+       nome lógico: /dev/input/mouse1
+       capacidades: i2c
+  *-input:6
+       produto: Sleep Button
+       ID físico: 8
+       nome lógico: input2
+       nome lógico: /dev/input/event2
+       capacidades: platform
+  *-input:7
+       produto: Video Bus
+       ID físico: 9
+       nome lógico: input20
+       nome lógico: /dev/input/event13
+       capacidades: platform
+  *-input:8
+       produto: Power Button
+       ID físico: a
+       nome lógico: input3
+       nome lógico: /dev/input/event3
+       capacidades: platform
+  *-input:9
+       produto: AT Translated Set 2 keyboard
+       ID físico: b
+       nome lógico: input4
+       nome lógico: /dev/input/event4
+       nome lógico: input4::capslock
+       nome lógico: input4::numlock
+       nome lógico: input4::scrolllock
+       capacidades: i8042
