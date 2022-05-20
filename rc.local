@@ -1,0 +1,4 @@
+cd /usr/local/csp
+./cardproxy.sh start
+chown root:syslog /var/log
+exit 0
