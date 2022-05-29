@@ -1,0 +1,36 @@
+# configurações do servidor
+server: 
+  servlet:
+    context-path: ${CONTEXT_PATH:/} 
+  port: ${SERVER_PORT:9002}
+
+# configurações do serviço
+spring:
+  application:
+    name: ${APP_NAME:analytics}
+  profiles:
+    active: default-security
+
+# configurações do actuator    
+management:
+  endpoints:
+    web.exposure.include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS 
+      
+# opções de log
+logging:
+  level:
+    br.jus.pje: DEBUG
+    
+analytics:
+  superset:
+    host: ${SUPERSET_DEFAULT_HOST:10.203.2.20}
+    port: ${SUPERSET_DEFAULT_PORT:8088}
+  jasperserver:
+    host: ${JASPERSERVER_DEFAULT_HOST:10.203.2.20}
+    port: ${JASPERSERVER_DEFAULT_PORT:8090}
+    domain: ${JASPERSERVER_DOMAIN:jasperserver-pro}
+    username: ${JASPERSERVER_USERNAME:jasperadmin}
+    password: ${JASPERSERVER_PASSWORD:jasperadmin}
