@@ -6,8 +6,9 @@ sudo apt-get install openjdk-11-jre openjdk-11-jdk -y
 sudo apt install snapd -y
 sudo snap install prospect-mail
 sudo snap install teams
-sudo snap install chromium
-sudo snap install krdc
+sudo apt-get install google-chrome-stable -y
+#sudo snap install chromium
+sudo snap install remmina
 sudo apt-get install libnss3-tools openssl xterm libpam0g:i386 libx11-6:i386 libstdc++6:i386 libstdc++5:i386 unzip -y
 wget -c https://github.com/2mesistemas/vaivendo/raw/master/snx_install.sh
 chmod +x snx_install.sh
