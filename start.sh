@@ -6,6 +6,9 @@ sudo apt-get install openjdk-11-jre openjdk-11-jdk -y
 sudo apt install snapd -y
 sudo snap install prospect-mail
 sudo snap install teams
+sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo apt-get update
 sudo apt-get install google-chrome-stable -y
 #sudo snap install chromium
 sudo snap install remmina
