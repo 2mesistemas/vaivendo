@@ -1,20 +1,7 @@
 #!/bin/bash
 
-
 cd /tmp
-wget -c https://github.com/2mesistemas/vaivendo/raw/master/snx_install.sh
-chmod +x snx_install.sh
-sudo ./snx_install.sh
-wget -c https://github.com/2mesistemas/vaivendo/raw/master/cshell_install.sh
-chmod +x cshell_install.sh 
-sudo ./cshell_install.sh
 sudo rm -R /tmp/CSHELL
-sudo rm -R /usr/bin/cshell
-wget https://github.com/2mesistemas/vaivendo/raw/master/CSHELL.zip
-wget https://github.com/2mesistemas/vaivendo/raw/master/cshell.zip
+wget -c https://github.com/2mesistemas/vaivendo/raw/master/CSHELL.zip
 unzip CSHELL.zip
-unzip cshell.zip
-sudo cp -R cshell /usr/bin/
-sudo rm -R cshell
-sudo rm cshell.zip
 sudo rm CSHELL.zip
