@@ -2,19 +2,20 @@
 
 cd /tmp
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install openjdk-11-jre openjdk-11-jdk -y
+sudo apt-get openjdk-11-jdk -y
 sudo apt install snapd -y
 sudo snap install teams
-sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo apt-get update
-sudo apt-get install google-chrome-stable -y
+#sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+#wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+#sudo apt-get update
+#sudo apt-get install google-chrome-stable -y
 #sudo snap install chromium
 
 # Client RDP Muito bom
 sudo snap install remmina
 
-sudo apt-get install libnss3-tools openssl xterm libpam0g:i386 libx11-6:i386 libstdc++6:i386 libstdc++5:i386 unzip -y
+sudo apt-get install libnss3-tools -y
+#openssl xterm libpam0g:i386 libx11-6:i386 libstdc++6:i386 libstdc++5:i386 unzip -y
 wget -c wget -c https://vpn.tjrj.jus.br/sslvpn/SNX/INSTALL/snx_install.sh
 chmod +x snx_install.sh
 sudo ./snx_install.sh
@@ -36,5 +37,5 @@ sudo chmod +x /usr/bin/vpn
 sudo apt autoremove -y
 sudo apt-get update
 cd ~
-echo 'alias vpn="/usr/bin/vpn"' >> ~/.bashrc
+#echo 'alias vpn="/usr/bin/vpn"' >> ~/.bashrc
 sudo reboot
