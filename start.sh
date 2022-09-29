@@ -1,0 +1,43 @@
+#!/bin/bash
+
+cd /tmp
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get install openjdk-11-jre openjdk-11-jdk -y
+sudo apt install snapd -y
+sudo snap install teams
+sudo snap install brave
+#sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+#wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+#sudo apt-get update
+#sudo apt-get install google-chrome-stable -y
+#sudo snap install chromium
+
+# Client RDP Muito bom
+sudo snap install remmina
+
+sudo apt-get install libnss3-tools openssl xterm libpam0g:i386 libx11-6:i386 libstdc++6:i386 libstdc++5:i386 unzip -y
+wget -c wget -c https://vpn.tjrj.jus.br/sslvpn/SNX/INSTALL/snx_install.sh
+chmod +x snx_install.sh
+sudo ./snx_install.sh
+wget -c https://vpn.tjrj.jus.br/sslvpn/SNX/INSTALL/cshell_install.sh
+chmod +x cshell_install.sh 
+sudo ./cshell_install.sh
+wget https://github.com/2mesistemas/vaivendo/raw/master/CSHELL.zip
+wget https://github.com/2mesistemas/vaivendo/raw/master/cshell.zip
+sudo rm -R /tmp/CSHELL
+sudo rm -R /usr/bin/cshell
+unzip CSHELL.zip
+unzip cshell.zip
+sudo cp -R cshell /usr/bin/
+sudo rm -R cshell
+sudo rm cshell.zip
+sudo rm CSHELL.zip
+sudo wget -c -P /usr/bin/ https://github.com/2mesistemas/vaivendo/raw/master/vpn
+sudo chmod +x /usr/bin/vpn
+sudo apt autoremove -y
+sudo apt-get update
+cd ~
+echo 'alias vpn="/usr/bin/vpn"' >> ~/.bashrc
+sudo reboot 
+
+
