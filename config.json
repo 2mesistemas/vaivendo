@@ -28,7 +28,17 @@
   ],
   "Networks": [
 
-       { 
+       {
+      "Name": "💙TIM GB💙",
+      "FLAG": "tim",
+      "Payload": "GET wss://bam.nr-data.net// HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]Connection: Keep -Vivo[crlf][crlf]",
+      "SNI": "bam.nr-data.net",
+      "TlsIP": "162.247.241.14",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+      },
+       {
      "Name": "🟣️VIVO 1🟣",
    "FLAG": "vivo",
    "Payload": "GET / HTTP/1.1[crlf]Host: ag1.tatucobra.tk[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]",
@@ -69,16 +79,6 @@
       "Info": "Tlsws"
        },
         {
-      "Name": "💙TIM GB💙",
-      "FLAG": "tim",
-      "Payload": "GET wss://bam.nr-data.net// HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]Connection: Keep -Vivo[crlf][crlf]",
-      "SNI": "bam.nr-data.net",
-      "TlsIP": "162.247.241.14",
-      "ProxyIP": "",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
-      },
-       {
       "Name": "🔵TIM 1",
       "FLAG": "tim",
       "Payload": "GET wss://materiais.alura.com.br  HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
