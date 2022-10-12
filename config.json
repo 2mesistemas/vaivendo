@@ -1,8 +1,8 @@
 {
   "Version": "4.7",
   "ReleaseNotes": "Nova Atualização Disponivel",
-  "UrlUpdate": "https://bitbin.it/JqsLKUIy/raw/",
-  "Sms": "https://kiritosshxd.github.io/Conecta4g_site/UrlSms",
+  "UrlUpdate": "https://raw.githubusercontent.com/2mesistemas/vaivendo/main/config.json",
+  "Sms": "",
   "EmailFeedback": "k@gmail.com",
   "UrlContato": "",
   "UrlTermos": "https://kiritosshxd.github.io/Conecta4g_site/termos.html",
@@ -15,10 +15,10 @@
   ],
   "Servers": [
     {
-      "Name": "⚡GB TELECOM⚡",
+      "Name": "2ME",
       "TYPE": "premium",
       "FLAG": "br.png",
-      "ServerIP": "br1.servidorpvs.tk",
+      "ServerIP": "2meinfocell.com",
       "CheckUser": "http://45.140.192.136:5454/checkUser",
       "ServerPort": "22",
       "SSLPort": "443",
