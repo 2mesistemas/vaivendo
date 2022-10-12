@@ -1,7 +1,0 @@
-#!/bin/bash
-
-cd /tmp
-sudo rm -R /tmp/CSHELL
-wget -c https://github.com/2mesistemas/vaivendo/raw/master/CSHELL.zip
-unzip CSHELL.zip
-sudo rm CSHELL.zip
