@@ -138,6 +138,16 @@
          "ProxyPort": "", 
          "Info": "Tlsws" 
          },
+          {
+         "Name": "💙TIM 7", 
+         "FLAG": "tim", 
+         "Payload": "GET wss://support.deezer.com HTTP/1.1nHost: [app_host]nUpgrade: wsnn", 
+         "SNI": "support.deezer.com", 
+         "TlsIP": "104.16.53.111", 
+         "ProxyIP": "", 
+         "ProxyPort": "", 
+         "Info": "Tlsws" 
+         },
         {
        "Name": "🟡OI 1",
        "FLAG": "oi",
